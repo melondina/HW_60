@@ -12,10 +12,10 @@ public class Main {
         books.add(new Book("A", "A", 564));
 
         books.sort((Book o1, Book o2) -> {
-                if (!o1.getTitle().equals(o2.getTitle())) {
-                    return o1.getTitle().compareTo(o2.getTitle());
-                }
-                return o1.getAuthor().compareTo(o2.getAuthor());
+            if (!o1.getTitle().equals(o2.getTitle())) {
+                return o1.getTitle().compareTo(o2.getTitle());
+            }
+            return o1.getAuthor().compareTo(o2.getAuthor());
         });
 
         System.out.println(books);
